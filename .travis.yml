@@ -1,8 +1,8 @@
 language: csharp
-solution: Calculator.sln
+solution: Application.sln
 install:
-  - nuget restore Calculator.sln
+  - nuget restore Application.sln
   - nuget install NUnit.Runners -Version 3.6.0 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release Calculator.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe ./Calculator.Test/bin/Release/Calculator.Test.dll
+  - xbuild /p:Configuration=Release Application.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe ./App.Test/bin/Release/App.Test.dll
