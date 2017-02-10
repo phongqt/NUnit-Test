@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace App.Test
 {
-    [TestFixture]
+    [TestFixture(Author = "PhongTV", Description = "Testing for function login"), Description("Testing function login")]
     public class Login
     {
         private string email = string.Empty;
