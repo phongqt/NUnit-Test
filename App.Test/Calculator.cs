@@ -15,16 +15,18 @@ namespace App.Test
     {
         private FrmCalculator frmCalculator;
 
-        [SetUp]
-        public void Initial()
-        {
-            frmCalculator = new FrmCalculator();
-            frmCalculator.Show();
-        }
+        //[SetUp]
+        //public void Initial()
+        //{
+        //    frmCalculator = new FrmCalculator();
+        //    frmCalculator.Show();
+        //}
 
         [Test]
         public void InitialForm()
-        {            
+        {
+            frmCalculator = new FrmCalculator();
+            frmCalculator.Show();
             Assert.AreEqual("Calculator", frmCalculator.Text);
         }
     }
